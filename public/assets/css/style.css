@@ -22,8 +22,6 @@
   }
 }
 
-
-
 .avatar-upload {
   position: relative;
   max-width: 150px;
@@ -62,6 +60,8 @@ html {
 body {
   background-image: linear-gradient(rgb(40, 49, 59, 0.7), rgb(72, 84, 97, 0.6)), url("../media/bg.jpg");
   background-size: cover;
+  height: 100%;
+  width: 100%
 }
 
 .card {

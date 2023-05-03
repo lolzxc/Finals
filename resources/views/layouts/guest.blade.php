@@ -21,7 +21,7 @@
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 
-<body style="height: 100%;width: 100%">
+<body>
     {{ $slot }}
 
 
