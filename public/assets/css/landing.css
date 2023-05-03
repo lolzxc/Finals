@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bg {
+  background-image: linear-gradient(rgb(40, 49, 59, 0.7), rgb(72, 84, 97, 0.6)), url("../media/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  height: 1000px;
+  background-color: #e4d9ff;
+}
+
+.display-4 {
+  background: linear-gradient(to right, white, #e4d9ff, #e4d9ff, #273469, #1E2749, #30343F, #1E2749, #273469, #e4d9ff, #e4d9ff, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.content h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  background-color: #e4d9ff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #273469;
+  font-size: 15px;
+
+}
+
+.footer {
+  color: black;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@font-face {
+  font-family: Pixel;
+  src: url("../css/retroo.woff") format('woff');
+}
