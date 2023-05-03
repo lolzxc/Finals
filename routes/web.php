@@ -3,6 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PostController;
+use App\Models\Post;
+use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,8 +23,17 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    // $posts = Post::all();
+    $posts = DB::table('posts')
+        ->join('users', 'posts.user_id', '=', 'users.id')
+        ->get();
+
+    $users = User::all();
+    
+    return view('dashboard', compact('posts', 'users'));
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::post('/dashboard', [PostController::class, 'store'])->name('add_post');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
