@@ -117,11 +117,11 @@
                     <span class="mb-1"></span>
 
                     </div>
-                    <span> {{ $post->description }} </span>
+                    {{-- <span> {{ $post->description }} </span>
                     <span> {{ $post->image }} </span>
                    
                     <span> {{ $post->user_id }} </span>
-                    <span> {{ $post->name }} </span>
+                    <span> {{ $post->name }} </span> --}}
                 @endforeach
             </div>
         </div>
