@@ -142,29 +142,29 @@
                   
                     <div class="row">
                       <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <img src={{ asset('assets/media/austin.png') }} height="100px" width="150px" alt="" srcset="">
+                        <img src={{ asset('assets/media/austin.png') }} height="100px" width="100px" alt="" srcset="">
                         <h3>Ryan Austin Castro</h3>
                         <p style="color: gold;">Front End Developer</p>
                       </div>
                       <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <img src={{ asset('assets/media/justine.png') }} height="100px" width="150px" alt="" srcset="">
+                        <img src={{ asset('assets/media/justine.png') }} height="100px" width="100px" alt="" srcset="">
                         <h3>Justine Lorenze Clemente</h3>
                         <p style="color: gold;">Front End Developer</p>
                       </div>
                       <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <img src={{ asset('assets/media/neal.png') }} height="100px" width="150px" alt="" srcset="">
+                        <img src={{ asset('assets/media/neal.png') }} height="100px" width="100px" alt="" srcset="">
                         <h3>Neal Clarence Domingo</h3>
                         <p style="color: gold;">Front End Developer</p>
                       </div>
                     </div>
                     <div class="row pt-5">
                       <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <img src={{ asset('assets/media/carlo.png') }} height="100px" width="150px" alt="" srcset="">
+                        <img src={{ asset('assets/media/carlo.png') }} height="100px" width="100px" alt="" srcset="">
                         <h3>Ryan Carlo Crisol</h3>
                         <p style="color: gold;">Front End Developer</p>
                       </div>
                       <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <img src={{ asset('assets/media/jim.png') }} height="100px" width="150px" alt="" srcset="">
+                        <img src={{ asset('assets/media/jim.png') }} height="100px" width="100px" alt="" srcset="">
                         <h3>Jim Eron Garrido</h3>
                         <p style="color: gold;">Back End Developer</p>
                       </div>
