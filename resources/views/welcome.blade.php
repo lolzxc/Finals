@@ -41,6 +41,8 @@
                                 style="font-family:Pixel; font-size: 25px; color: #1E2749;">PEN
                                 & PIXEL</a>
                         </li>
+
+                        
                     </ul>
                     <!-- Left links -->
 
@@ -49,7 +51,7 @@
                             @auth
                                 <a href="{{ url('/dashboard') }}" type="button"
                                     class="btn btn-primary me-2 text-decoration-none" style="font-family:Pixel;">
-                                    Login
+                                    Enter Now!
                                 </a>
                             @else
                                 <a href="{{ route('login') }}" type="button"
@@ -79,6 +81,7 @@
                 <p class="lead fw-normal text-white">Blog For Gamers, By Gamers.</p>
                 <a class="btn btn-outline-light btn-lg" href="#content" style="font-family:Pixel; font-size: 23px;">GAME
                     ON</a>
+                
             </div>
             <div class=" product-device box-shadow d-none d-md-block">
             </div>
@@ -131,8 +134,47 @@
                     </p>
                 </div>
             </div>
+            
+        <div class="content" id="content" style="background-color: #273469; color: white; font-family:Pixel;">
+            <div class="px-4 pt-5 my-5 text-center">
+                <h1 class="text-warning  fw-bold" style="font-family:Pixel; color: gold; font-size: 4em">About Us</h1><br><br>
+                <div class="col-lg-10 mx-auto">
+                  
+                    <div class="row">
+                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <img src={{ asset('assets/media/austin.png') }} height="100px" width="150px" alt="" srcset="">
+                        <h3>Ryan Austin Castro</h3>
+                        <p style="color: gold;">Front End Developer</p>
+                      </div>
+                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <img src={{ asset('assets/media/justine.png') }} height="100px" width="150px" alt="" srcset="">
+                        <h3>Justine Lorenze Clemente</h3>
+                        <p style="color: gold;">Front End Developer</p>
+                      </div>
+                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <img src={{ asset('assets/media/neal.png') }} height="100px" width="150px" alt="" srcset="">
+                        <h3>Neal Clarence Domingo</h3>
+                        <p style="color: gold;">Front End Developer</p>
+                      </div>
+                    </div>
+                    <div class="row pt-5">
+                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <img src={{ asset('assets/media/carlo.png') }} height="100px" width="150px" alt="" srcset="">
+                        <h3>Ryan Carlo Crisol</h3>
+                        <p style="color: gold;">Front End Developer</p>
+                      </div>
+                      <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <img src={{ asset('assets/media/jim.png') }} height="100px" width="150px" alt="" srcset="">
+                        <h3>Jim Eron Garrido</h3>
+                        <p style="color: gold;">Back End Developer</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+            </div>
             <div class="footer">
-                <p style="font-family:Pixel;">© 2022 Copyright: Pen & Pixel. All rights reserved.</p>
+                <p style="font-family:Pixel; color:white">© 2022 Copyright: Pen & Pixel. All rights reserved.</p>
             </div>
             
 
