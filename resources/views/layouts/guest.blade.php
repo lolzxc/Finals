@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Pen & Pixel</title>
+    <link rel="icon" href="{{ asset('assets/media/logo-p.png')}}" type="image/icon type">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
