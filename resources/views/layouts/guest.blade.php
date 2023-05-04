@@ -21,7 +21,12 @@
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 
-<body>
+<body style="background-image: linear-gradient(rgb(40, 49, 59, 0.7), rgb(72, 84, 97, 0.6)), url('{{ asset('assets/media/bg.jpg')}}');
+  background-size: cover;
+  height: 100%;
+  width: 100%">
+	
+	
     {{ $slot }}
 
 
