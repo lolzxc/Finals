@@ -24,11 +24,18 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     // $posts = Post::all();
-    $posts = DB::table('posts')
-        ->join('users', 'posts.user_id', '=', 'users.id')
+    // $posts = DB::table('posts')
+    //     ->join('users', 'posts.user_id', '=', 'users.id')
+    //     ->except('users.created_at')  
+    //     ->get();
+
+    $posts = DB::table('users')
+        ->join('posts', 'posts.user_id', '=', 'users.id')
         ->get();
 
     $users = User::all();
+
+    // $times = Post::all();
     
     return view('dashboard', compact('posts', 'users'));
 })->middleware(['auth', 'verified'])->name('dashboard');
