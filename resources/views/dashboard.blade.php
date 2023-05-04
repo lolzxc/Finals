@@ -79,7 +79,7 @@
             </form>
 
             <div class="posts mt-2">
-                @foreach($posts as $post)
+                @foreach($posts->reverse() as $post)
 
                     <div class="container card p-3 mb-2 d-flex flex-column"
                     style="width: 100%; font-family: Pixel; background-color: #e4d9ff; color: #273469;">
@@ -91,7 +91,8 @@
                     </div> --}}
 
                     <div class="row">
-                      <div class="col-1"><img src="{{ asset('uploads/images/default_photo/' . $post->default_photo )}}" height="100px" width="100px" style="border-radius: 50%"></div>
+                      <div class="col-1"><img src="{{ asset('uploads/images/default_photo/' . $post->default_photo )}}"
+                         height="200px" width="200px" style="border-radius:50%; object-fit: cover;" ></div>
                       <div class="col-2" style="font-size: 16px;">
                         <span style="font-weight: bolder">{{$post->name}}</span>
                       </div>
