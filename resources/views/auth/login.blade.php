@@ -111,7 +111,7 @@
   
                       <div class="d-flex align-items-center justify-content-center pb-4" style="font-family:Pixel;">
                         <p class="mb-0 me-2" ;>Don't have an account?</p>
-                        <a style="text-decoration: none; font-size: 13px;" href="registration.html">Create New.</a>
+                        <a style="text-decoration: none; font-size: 13px;" href=" {{ route('register') }}">Create New.</a>
                       </div>
   
                     </form>

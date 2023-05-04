@@ -169,7 +169,7 @@
   
                     <div class="d-flex align-items-center justify-content-center pb-4">
                       <p class="mb-0 me-2" style="font-family:Pixel; font-size: 13px;">Already have an account?</p>
-                      <a href="login.html" style="font-family:Pixel; font-size: 13px; text-decoration: none;">Login
+                      <a href="{{ route('login') }}" style="font-family:Pixel; font-size: 13px; text-decoration: none;">Login
                         here.</a>
                     </div>
   
