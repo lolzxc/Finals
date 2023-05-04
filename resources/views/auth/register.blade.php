@@ -115,7 +115,11 @@
                     <p class="mb-4" style="font-family:Pixel;">Create your account to continue</p>
                     <div class="avatar-upload">
                       <div class="avatar-preview" style="background-image: url('https://via.placeholder.com/150');">
+                        <img id="preview-selected-image" />
                       </div>
+                      {{-- <div class="preview">
+                        <img id="preview-selected-image" />
+                      </div> --}}
                       <div class="mt-2">
                         <label class="btn btn-primary" style="font-family:Pixel; background-color: #273469;
                         font-size: 15px;">

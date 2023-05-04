@@ -92,17 +92,20 @@
 
                     <div class="row">
                       <div class="col-1"><img src="{{ asset('uploads/images/default_photo/' . $post->default_photo )}}"
-                         height="200px" width="200px" style="border-radius:50%; object-fit: cover;" ></div>
-                      <div class="col-2" style="font-size: 16px;">
+                        height="200px" width="200px" style="border-radius:50%; object-fit: cover;" >
+                      </div>
+                      <div class="col-7 my-auto" style="font-size: 16px;">
                         <span style="font-weight: bolder">{{$post->name}}</span>
                       </div>
-                      <div class="col">
+                      <div class="col-3 ms-auto">
                         <span style="font-weight:light; font-size: 12px;">{{date('d-M-Y H:i', strtotime($post->created_at))}}</div>
                     </div>
-                    <div class="row mt-3">
+
+                    <div class="row">
                       <div class="col-1"></div>
                       <div class="col-10">{{$post->description}}</div>
                     </div>
+                    
                     <div class="row">
                       <div class="col-1"></div>
                       @if($post->image != null)
