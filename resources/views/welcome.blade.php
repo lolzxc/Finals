@@ -174,7 +174,7 @@
                 
             </div>
             <div class="footer">
-                <p style="font-family:Pixel; color:white">© 2022 Copyright: Pen & Pixel. All rights reserved.</p>
+                <p style="font-family:Pixel; color:white">© 2023 Copyright: Pen & Pixel. All rights reserved.</p>
             </div>
             
 
