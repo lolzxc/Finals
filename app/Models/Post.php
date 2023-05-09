@@ -17,7 +17,9 @@ class Post extends Model
     protected $fillable = [
         'description',
         'image',
-        
+        'like',
+        'comment',
+        'tag',
     ];
 
 

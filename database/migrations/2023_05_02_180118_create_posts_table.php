@@ -17,6 +17,9 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('description');
             $table->string('image');
+            $table->integer('like')->default(0);
+            $table->integer('comment')->default(0);
+            $table->string('tag');
             $table->timestamps();
         });
     }

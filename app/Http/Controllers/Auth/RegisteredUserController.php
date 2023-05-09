@@ -41,7 +41,7 @@ class RegisteredUserController extends Controller
             'default_photo' => ['required', File::image()
                             ->min(1)
                             ->max(12*1024)
-                            ->dimensions(Rule::dimensions()->maxWidth(10000)->maxHeight(5000))],
+                            ->dimensions(Rule::dimensions()->maxWidth(10000)->maxHeight(50000))],
         ]);
 
         if($request->hasfile('default_photo')) 
