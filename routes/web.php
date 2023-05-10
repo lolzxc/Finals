@@ -28,14 +28,15 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     $posts = DB::table('users')
         ->join('posts', 'posts.user_id', '=', 'users.id')
-        ->get();
+        ->orderBy('posts.id', 'desc')
+	->get();
 
     $comments = DB::table('posts')
         ->join('comments', 'comments.post_id', '=', 'posts.id')
         ->get();
 
     $users = User::all();
-    
+     
     return view('dashboard', compact('posts', 'users', 'comments'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
